@@ -1,0 +1,9 @@
+/target
+/output
+/dist
+.cmap_browser
+.env
+
+# Real staff and project lists (work data) - copy the *.example.csv files to use
+/data/role.csv
+/data/project.csv

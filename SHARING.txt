@@ -1,0 +1,21 @@
+cmap weekly dashboards
+======================
+
+1. Unzip this folder anywhere (e.g. your Documents) and keep the "data" folder next to the exe.
+2. Double-click cmap-dashboard.exe.
+3. First run only: type your own cmap username and password.
+   They are saved in Windows Credential Manager on your PC (not in any file).
+   To change them later, run:  cmap-dashboard.exe --forget-login
+4. The app downloads this week's availability from cmap, compares it with last week's file
+   (kept in Downloads\CMAP) and writes the three department dashboards (HTML + PNG)
+   to the "output" folder next to the exe, then opens it.
+
+Notes
+- Windows may show a "protected your PC" (SmartScreen) message for an unsigned app:
+  choose More info > Run anyway.
+- It needs Chrome or Edge installed (it opens one to talk to cmap; nothing else to download).
+- When cmap truncates a project name, the app looks up the full name and adds it to
+  data\project.csv. data\role.csv lists who belongs to which department - add new starters there.
+- The first week you use it there is no "last week" file, so week-on-week changes are blank.
+  Run it again the following Monday.
+- Options: cmap-dashboard.exe --help
